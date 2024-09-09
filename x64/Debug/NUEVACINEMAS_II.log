@@ -1,19 +1,2 @@
-﻿  Booking.cpp
-  Cinema.cpp
-  Movie.cpp
-  NUEVACINEMAS_II.cpp
-  Room.cpp
-  Sale.cpp
-  Schedule.cpp
-  Seat.cpp
-  Generando código...
-Booking.obj : error LNK2019: símbolo externo "public: __cdecl Seat::~Seat(void)" (??1Seat@@QEAA@XZ) sin resolver al que se hace referencia en la función "public: __cdecl Booking::Booking(void)" (??0Booking@@QEAA@XZ)
-NUEVACINEMAS_II.obj : error LNK2001: símbolo externo "public: __cdecl Seat::~Seat(void)" (??1Seat@@QEAA@XZ) sin resolver
-Room.obj : error LNK2001: símbolo externo "public: __cdecl Seat::~Seat(void)" (??1Seat@@QEAA@XZ) sin resolver
-Schedule.obj : error LNK2001: símbolo externo "public: __cdecl Seat::~Seat(void)" (??1Seat@@QEAA@XZ) sin resolver
-NUEVACINEMAS_II.obj : error LNK2019: símbolo externo "public: __cdecl Cinema::Cinema(void)" (??0Cinema@@QEAA@XZ) sin resolver al que se hace referencia en la función main
-NUEVACINEMAS_II.obj : error LNK2019: símbolo externo "public: __cdecl Cinema::~Cinema(void)" (??1Cinema@@QEAA@XZ) sin resolver al que se hace referencia en la función main
-NUEVACINEMAS_II.obj : error LNK2019: símbolo externo "void __cdecl gestionarMantenimiento(void)" (?gestionarMantenimiento@@YAXXZ) sin resolver al que se hace referencia en la función "void __cdecl showMenu(bool &)" (?showMenu@@YAXAEA_N@Z)
-    Sugerencia sobre los símbolos definidos que podrían coincidir:
-      "void __cdecl gestionarMantenimiento(class Cinema &)" (?gestionarMantenimiento@@YAXAEAVCinema@@@Z)
-C:\Users\Albin\OneDrive\Escritorio\todo\Las malas lenguas\c++\NUEVACINEMAS_II\x64\Debug\NUEVACINEMAS_II.exe : fatal error LNK1120: 4 externos sin resolver
+﻿  NUEVACINEMAS_II.cpp
+  NUEVACINEMAS_II.vcxproj -> C:\Users\Albin\OneDrive\Escritorio\todo\Las malas lenguas\c++\NUEVACINEMAS_II\x64\Debug\NUEVACINEMAS_II.exe

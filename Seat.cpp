@@ -4,3 +4,6 @@
 Seat::Seat() {
 	this->state = "DIS";
 }
+Seat::~Seat() {
+
+}

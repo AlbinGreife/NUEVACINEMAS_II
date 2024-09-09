@@ -28,5 +28,3 @@ public:
     std::string getName();
     int getYear();
 };
-
-

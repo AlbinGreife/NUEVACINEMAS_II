@@ -1,12 +1,11 @@
 #include <iostream>
 #include"Cinema.h"
 
-void showMenu(bool& cerrarPrograma);
-void gestionarArchivo(bool& cerrarPrograma);
-void gestionarMantenimiento();
+void showMenu(bool& logOut);
+void gestionarArchivo(bool& logOut);
+void gestionarMantenimiento(Cinema& cinema);
 
-
-void showMenu(bool& logOut) {
+void showMenu(bool& logOut, Cinema& cinema) {
     int option;
     do {
         std::cout << "1. Archivo\n";
@@ -22,7 +21,7 @@ void showMenu(bool& logOut) {
             gestionarArchivo(logOut);
             break;
         case 2:
-            gestionarMantenimiento();
+            gestionarMantenimiento(cinema);
             break;
         case 3:
             //gestionarReserva();
@@ -54,6 +53,7 @@ void gestionarArchivo(bool& logOut) {
     case 2:
         std::cout << "Logging out...\n";
         logOut = true;
+        std::cout << "logOut = " << logOut << std::endl;  // Debugging print
         break;
     default:
         std::cout << "Invalid option. Try again.\n";
@@ -174,7 +174,8 @@ int main()
     bool logOut = false;
     Cinema cinema;
     cinema.print();
-    showMenu(logOut);
+    showMenu(logOut, cinema);
+    //gestionarMantenimiento(cinema);
 
     std::cout << "\n\n\n\n";
     return 0;
