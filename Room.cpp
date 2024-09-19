@@ -1,19 +1,41 @@
 #include<iostream>
 #include"Room.h"
 
+Room::Room(int num, int seatCount, double p) {
+	this->number = num;
+	this->seats = seatCount;
+	this->price = p;
+}
 Room::Room() {
 
-}
-Room::Room(int id, int seatsNumber, double price) {
-	this->id = id;
-	this->seatsNumber = seatsNumber;
-	this->price = price;
 }
 Room::~Room() {
 
 }
 
 //Getters
-double Room::getPrice() {
+float Room::getPrice() {
 	return this->price;
+}
+int Room::getSeats() {
+	return this->seats;
+}
+int Room::getNumber() {
+	return this->number;
+}
+std::string Room::getSeatState(int row, int col) {
+	return roomSeats[row][col].getState();
+}
+//Setters
+void Room::setNumber(int num) {
+	number = num;
+}
+void Room::setSeats(int seatCount) {
+	seats = seatCount;
+}
+void Room::setPrice(double p) {
+	price = p;
+}
+void Room::setSeatState(int row, int col, const std::string& state) {
+	roomSeats[row][col].setState(state);
 }

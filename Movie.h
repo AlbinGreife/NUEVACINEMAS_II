@@ -7,18 +7,18 @@ private:
     int year;
     int time;
     std::string country;
-    int reviews; //From 0 to 10
+    int reviews; //Del 0 al 10
     bool withData;
 
 public:
     Movie();
     ~Movie();
-    Movie(std::string name, int year, int time, std::string country, int review);
-    void setName(std::string name);
-    void setYear(int year);
-    void setTime(int time);
-    void setCountry(std::string country);
-    void setReview(int review);
+    Movie(const std::string& n, int y, int t, const std::string& c, int r);
+    void setName(const std::string& n);
+    void setYear(int y);
+    void setTime(int t);
+    void setCountry(const std::string& c);
+    void setReview(int r);
     void setWithData(bool withData);
 
     int getTime();
@@ -28,3 +28,5 @@ public:
     std::string getName();
     int getYear();
 };
+
+

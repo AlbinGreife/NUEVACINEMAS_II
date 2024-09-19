@@ -9,15 +9,13 @@ Movie::~Movie() {
 
 }
 
-Movie::Movie(std::string name, int year, int time, std::string country, int review) {
-    this->name = name;
-    this->year = year;
-    this->time = time;
-    this->country = country;
-    this->reviews = reviews;
-    this->withData = true;
+Movie::Movie(const std::string& n, int y, int t, const std::string& c, int r) {
+    this->name = n;
+    this->year = y;
+    this->time = t;
+    this->country = c;
+    this->reviews = r;
 }
-
 //Getters
 std::string Movie::getName() {
     return this->name;
@@ -44,24 +42,24 @@ bool Movie::getWithData() {
 }
 
 //Setters
-void Movie::setName(std::string name) {
-    this->name = name;
+void Movie::setName(const std::string& n) {
+    this->name = n;
 }
 
-void Movie::setYear(int year) {
-    this->year = year;
+void Movie::setYear(int y) {
+    this->year = y;
 }
 
-void Movie::setTime(int time) {
-    this->time = time;
+void Movie::setTime(int t) {
+    this->time = t;
 }
 
-void Movie::setCountry(std::string country) {
-    this->country = country;
+void Movie::setCountry(const std::string& c) {
+    this->country = c;
 }
 
-void Movie::setReview(int review) {
-    this->reviews = review;
+void Movie::setReview(int r) {
+    this->reviews = r;
 }
 
 void Movie::setWithData(bool withData) {

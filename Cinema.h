@@ -8,20 +8,41 @@
 
 class Cinema {
 private:
-    Movie cinemaMovies[4];
-    Room cinemaRooms[2];
-    Schedule cinemaSchedules[4];
-    Booking cinemaBookings[50];
+    Movie** cinemaMovies;
+    Room** cinemaRooms;
+    Schedule** cinemaSchedules;
+    int numMovies;
+    int numRooms;
+    int numSchedules;
+    int numBookings;
+    int* bookingNumber;
+    Booking* cinemaBookings[50];
     Sale sales[50];
 
 public:
     Cinema();
     ~Cinema();
 
+    Movie* getMovie(int index);
+    int getNumMovies();
+    Schedule* getSchedule(int index);
+    int getNumSchedules();
+    Room* getRoom(int bookingIndex);
+    Booking* getBooking(int index);
+    int* getBookingNumber();
+    int getNumBookings() const;
+
+    void setBookingNumber(int bookingNum);
+
     void print();
-    void generateMovie();
+    void generateMovies();
     void generateRooms();
     void generateSchedules();
     void addMovie();
+    void addBooking(Booking* newBooking);
+
+    void modifyMovies();
+    void modifyRooms();
+    void modifySchedules();
 
 };

@@ -1,2 +1,12 @@
-﻿  NUEVACINEMAS_II.cpp
+﻿  Booking.cpp
+  Cinema.cpp
+  Movie.cpp
+  NUEVACINEMAS_II.cpp
+  Room.cpp
+C:\Users\Albin\OneDrive\Escritorio\todo\Las malas lenguas\c++\NUEVACINEMAS_II\Room.cpp(7,16): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\Albin\OneDrive\Escritorio\todo\Las malas lenguas\c++\NUEVACINEMAS_II\Room.cpp(37,10): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+  Sale.cpp
+  Schedule.cpp
+  Seat.cpp
+  Generando código...
   NUEVACINEMAS_II.vcxproj -> C:\Users\Albin\OneDrive\Escritorio\todo\Las malas lenguas\c++\NUEVACINEMAS_II\x64\Debug\NUEVACINEMAS_II.exe
